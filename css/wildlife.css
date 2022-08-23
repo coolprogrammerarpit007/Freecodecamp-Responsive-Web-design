@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    background-color: #1F2937;
+    padding: 3rem 0;
+}
+
+nav{
+    border: 0px solid green;
+    /* background-color: #818274; */
+}
+ul{
+    border: 0px solid blue;
+    list-style-type:none;
+    text-align: right;
+}
+
+li{
+    border: 3px solid #D6D58E;
+    width:20%;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0.7rem;
+    margin-left: 1.45rem;
+    border-radius: 5px;
+}
+li a{
+    border: 0px solid yellow;
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    background-color: #D6D58E;
+    color: white;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+li:hover{
+    background-color: #818274;
+    box-shadow: 4px 4px 4px 0 #506266;
+    text-transform: capitalize;
+}
+
+.header_container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+h1{
+    border: 0px solid red;
+    padding-left: 4.2rem;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+h2{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+article p{
+    font-size: 1.3rem;
+    color: #E5E7EB;
+}
+header button{
+    background-color: #3882F6;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    color: wheat;
+    font-size: 1.2em;
+}
+h1,nav,article,img{
+    /* flex-grow: 1;  */
+    flex-basis: 50%;
+}
+.section1{
+    border: 0px solid green;
+    padding: 1rem 0;
+    background-color: wheat;
+}
+
+#article h3{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: #1F2937;
+}
+figure img{
+    border-radius: 5%;
+    border: 5px groove gray;
+}
+.section2{
+    margin: auto;
+    background-color: #E5E7EB;
+    padding: 5rem 0;
+}
+
+blockquote{
+    border: 0px solid green;
+    font-size: 1.4rem;
+    font-weight:lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+blockquote p{
+    border: 0px solid red;
+    width: 75%;
+    margin: auto;
+}
+
+cite{
+    border: 0px solid red;
+    display: block;
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.image_container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+img{
+    flex-basis: 15%;
+    margin-top: 1rem;
+}
+.section3{
+    padding: 5rem ;
+    background-color:#D6D58E;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup{
+    padding: 2rem;
+    border: 3px solid #3882F6 ;
+    border-radius: 15px;
+    width: 80%;
+    background-color: #3882F6;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.details{
+    font-size: 1.2em;
+    color: white;
+    flex-basis: 50%;
+}
+
+.section3 button{
+    margin-top: 1.5rem;
+    height: 45px;
+    flex-basis: 15.75%;
+    font-size: 18px;
+    border: 3px solid #ffffff;
+    color: white;
+    border-radius: 20px;
+    background-color:#3882F6 ;
+}
+
+footer{
+    background-color: #1F2937;
+    padding: 5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    width:50%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+img{
+    transition: transform 1s linear 0.1s;
+}
+img:hover{
+    transform: scale(1.1);
+}
+

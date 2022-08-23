@@ -1,0 +1,117 @@
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-width: 290px;
+    color: #4d4e53;
+    background-color: #ffffff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* Styling The Navigation Tag */
+nav{
+    border: 0px solid red;
+    flex-basis: 18%;
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    overflow: scroll;
+}
+nav ul{
+    border: 0px solid green;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav li{
+    border-right: 3px solid black;
+    padding-left: 0.7rem;   
+    width:100%;
+    text-align:left;
+    border-bottom: 3px solid black;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+}
+nav header{
+    text-align: center;
+    width:100%;
+    border: 0px solid red;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 3px solid black;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+}
+
+/* Styling The Section Tag */
+#main-doc{
+    border: 0px solid red;
+    flex-basis: 80%;
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+.main-doc header{
+    margin: 1rem 0;
+}
+
+#main-doc p, #main-doc ul{
+    word-break: break-all;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+
+#main-doc ul{
+    padding: 0 1rem;
+    margin-left: 4rem;
+}
+
+/* Styling The Code-block */
+
+.code-block{
+    background-color: rgb(247, 247, 247);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.code-block p{
+    margin-left: 1rem;
+}
+
+/* The Media Query */
+@media only screen and (max-width:600px){
+    body{
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav{
+        position:static;
+        flex-basis: 100%;
+    }
+    #main-doc{
+        position: static;
+        width: 100%;
+        flex-basis: 100%;
+        margin: 0;
+    }
+    nav li,nav ul{
+        width:100%
+    }
+    p{
+        width:100%
+    }
+}

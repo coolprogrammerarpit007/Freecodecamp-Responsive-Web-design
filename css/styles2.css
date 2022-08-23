@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(224, 221, 221);
+    padding: 5rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+}
+h1{
+    width: 80%;
+    box-shadow: 4px 4px 4px 4px #ffffff;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+}
+
+img{
+    width:328px;
+    height:300px;
+    border-radius: 10%;
+    transition: transform 1s linear 0.3s;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.container{
+    padding: 1rem 0;
+    background-color: #818274;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

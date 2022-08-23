@@ -1,0 +1,308 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+/* ********************************************************************************** */
+
+/* General Styling */
+
+/* Styling For The Navigation Tags */
+
+
+
+nav {
+    border: 0px solid red;
+  }
+  nav ul {
+    list-style-type: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-align:right;
+  }
+  nav li {
+    border: none;
+    border-radius: 10px;
+    width: 12rem;
+    background-color:#6A8C69 ;
+    text-align: center;
+    margin-bottom: 0.7rem;
+    display: inline-block;
+    margin-right: 1rem;
+  
+  }
+  nav a {
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+  }
+  nav a:hover {
+    background-color: #fff;
+    color: #6A8C69;
+  }
+
+  /* ************************* */
+  /* *************************************** */
+
+  /* Styling The Header Tag */
+
+  #header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgb(221, 221, 221);
+    border: 0px solid blue;
+    margin-bottom: 2rem;
+  }
+
+  #header-img{
+    flex-basis: 25%;
+    border: 0px solid green;
+    max-width: 100%;
+  }
+  #nav-bar{
+    flex-basis: 70%;
+  }
+
+  @media only screen and (max-width:600px){
+    #header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #nav-bar li{
+        display: block;
+    }
+  }
+
+  /* **************************************** */
+
+  /* Styling the Form Section */
+  input,h2{
+    max-width: 100%;
+  }
+  #form-submit{
+    margin-top: 1rem;
+    border: 0px solid red;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+  }
+  #form-submit>h2{
+    margin:1rem 1rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight:900;
+    border: 0px solid red;
+  }
+  #form{
+    border: 0px solid saddlebrown;
+  }
+  #email{
+    display: block;
+    border: 0px solid green;
+    padding: 0.25rem 3rem;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    font-size: 2rem;
+  }
+  #submit{
+    border: 0px solid blue;
+    display: block;
+    padding: 12px 3.125rem;
+    background-color: #A6BC09;
+    color: white;
+    position:relative;
+    left: 3rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  #submit:hover{
+    color:#A6BC09 ;
+    background-color: #fff;
+    border:none;
+    border-radius: 10px;
+    text-transform: uppercase;
+  }
+
+
+  /* *********************************** */
+
+  /* **************Styling The Products Sections */
+
+.products{
+    border: 0px solid green;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+  .materials,.shipping,.quality{
+    display: flex;
+    justify-content: space-between;
+    border: 0px solid red;
+    margin: 1rem;
+    max-width: 100%;
+  }
+  .icon{
+    border: 0px solid red;
+    flex-basis: 20%;
+    position: relative;
+    top: 0.5rem;
+  }
+  .detail{
+    border: 0px solid blue;
+    flex-basis: 75%;
+  }
+  .icon i{
+    position: relative;
+    left: 5rem;
+    color: orangered;
+    font-size: 3rem;
+  }
+  .products p{
+    margin-top: 0.7rem;
+    word-spacing: 1.3rem;
+    font-size: 1.6rem;
+  }
+
+  @media only screen and (max-width:600px){
+    .materials,.shipping,.quality{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .icon i{
+      display: none;
+    }
+    footer{
+      max-width: 100%;
+      text-align: center;
+    }
+    h2,#email{
+      font-size: 1rem;
+    }
+    h2{
+      text-align: center;
+    }
+    .price{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  /* ************************************* */
+
+  
+
+  /* ******************************** */
+
+  /* Styling The Video Tag */
+
+  .video-description{
+    padding: 1rem;
+    border: 0px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* *********************************** */
+
+  /* ********************************** */
+  /* Styling The Price Section */
+  .prices{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+  }
+  .prices h3,.prices h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .prices h3{
+    background-color: rgb(221, 221, 221);
+    padding: 1rem;
+  }
+  .prices p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+    text-align: center;
+  }
+  .button{
+    text-align: center;
+  }
+  .button button{
+    background-color: yellow;
+    width: 7rem;
+    padding: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+  }
+  button:hover{
+    background-color: #000;
+    color: yellow;
+  }
+
+  .price{
+    border: 3px solid gray;
+    width:25rem;
+    height: 25rem;
+    margin-bottom: 1rem;
+  }
+  
+  @media only screen and (max-width:600px){
+    .prices{
+      display: grid;
+      grid-template-columns: 1fr;
+      place-items: center;
+    }
+  }
+
+  /* ********************************* */
+
+  
+
+/* Styling The Footer Section */
+footer{
+  background-color: rgb(221, 221, 221);
+  margin: auto;
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: right;
+  width: 85%;
+  
+}
+
+.footer1{
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 1rem;
+  border: 0px solid red;
+}
+.footer2 p{
+  color: gray;
+}

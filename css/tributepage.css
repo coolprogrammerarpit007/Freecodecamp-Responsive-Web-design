@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    /* text-align: center; */
+    color: #333;
+}
+
+main{
+    background-color: rgb(238, 238, 238);
+    margin: 2rem 0.7rem;
+}
+
+header{
+    text-align: center;
+    padding: 3rem;
+    margin: 1rem 0;
+}
+header h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+@media only screen and (max-width:600px){
+    header h1{
+        font-size: 2rem;
+    }
+    #tribute-info ul{
+        line-height: 2rem;
+    }
+}
+
+#figure{
+    margin: 0 1rem;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+#img-div{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+figcaption{
+    font-size: 1rem;
+    padding: 1rem 0;
+    border: 0px solid red;
+}
+
+
+#tribute-info{
+    padding: 2rem;
+}
+#tribute-info >h3{
+    margin: 50px 0;
+    font-size: 1.45rem;
+    text-align: center;
+    
+}
+#tribute-info ul{
+    font-size: 1rem;
+    width: 50%;
+    line-height: 1.7rem;
+    margin: 0 auto;
+    
+}
+/* Styling Blockquote */
+blockquote {
+    font-size: 1rem;
+    font-style: italic;
+    /* max-width: 545px; */
+    max-width: 50%;
+    margin: 2rem auto 50px auto;
+    text-align: left;
+  }
+
+  /* Styling the footer of the tribute page. */
+  footer{
+    text-align: center;
+  }
+  footer a{
+    color: rgb(116, 99, 143);
+  }
+  footer h3{
+    font-size: 1.2rem;
+    padding: 0 0 2rem 1rem;
+  }
