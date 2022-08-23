@@ -5,3 +5,5 @@ This is Freecodcamp Responsive Web design Certification Projects
 // Preview for my projects
 
 https://codepen.io/Arpit20051999/full/WNzmPvB
+https://codepen.io/Arpit20051999/full/BarbMov
+https://codepen.io/Arpit20051999/full/qBovgbX
